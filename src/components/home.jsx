@@ -9,6 +9,8 @@ const Home = () => {
   const myPostApi = "http://localhost:3000/posts";
 
 
+
+
   useEffect(() => {
     getData();
   }, []);
@@ -25,11 +27,14 @@ const Home = () => {
       method: "POST",
       body: JSON.stringify(item),
       headers: {
-        "Content-type": "application/json; charset=UTF-8",
+        "Content-type": "application/json",
       },
     });
     alert("This item added successfully.")
   };
+
+
+
  
   return (
     <>
